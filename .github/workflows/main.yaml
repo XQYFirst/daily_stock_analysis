@@ -1,0 +1,10 @@
+name: 基础工作流示例
+on: [push]  # 触发条件为代码推送
+jobs:
+  代码检查:
+    runs-on: ubuntu-latest  # 使用GitHub托管的Ubuntu最新系统运行器
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v5
+      - name: 打印触发信息
+        run: echo "当前操作的分支：$GITHUB_REF"
