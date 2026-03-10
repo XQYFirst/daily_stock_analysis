@@ -1,7 +1,7 @@
 name: 基础工作流示例
 on: [push]  # 触发条件为代码推送
 jobs:
-  代码检查:
+  code-check:  # 修正后的合法作业ID
     runs-on: ubuntu-latest  # 使用GitHub托管的Ubuntu最新系统运行器
     steps:
       - name: 检出代码
